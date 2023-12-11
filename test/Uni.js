@@ -448,7 +448,7 @@ describe('Uniswap Contract', async () => {
     Final Balance of Token A   : ${fnlBalT2}
     `);
   });  
-  it.only("  ***Uniswap:K-- Taxable : swapExactTokensForTokens function  *** ", async ()=> {                
+  it("  ***Uniswap:K-- Taxable : swapExactTokensForTokens function  *** ", async ()=> {                
     await tokenA.connect(signer[0]).approve(uniswapV2Router02.target, TOKEN_A_AMOUNT);
     await taxableToken.connect(signer[0]).approve(uniswapV2Router02.target, TOKEN_B_AMOUNT);
     console.log(`TOKEN_A_AMOUNT : ${TOKEN_A_AMOUNT} \n    TOKEN_TAXABLE_AMOUNT : ${TOKEN_B_AMOUNT}`);
